@@ -1,0 +1,73 @@
+/*Copyright 2004 Knowledge Matters, Inc.
+Code written by Brock Bouchard
+6-11-04*/
+
+a
+{
+    text-decoration: none;
+}
+
+a.category
+{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+a.item
+{
+    font-size: 10px;
+}
+
+a:link
+{
+    color: #333333;
+}
+
+a:visited
+{
+    color: #333333;
+}
+
+a:hover
+{
+    color: #333333;
+}
+
+a:active
+{
+    color: #333333;
+}
+
+body
+{
+    background-color: #EEEEEE;
+    color: #333333;
+    font-family: arial, sans-serif;
+    line-height: 14px;
+    margin: 4px;
+}
+
+img
+{
+    visibility: hidden;
+}
+
+td.category
+{
+    padding-top: 6px;
+}
+
+td.item
+{
+    /* nothing here... this just made code generation easier */ 
+}
+
+#contentsCell
+{
+    font-family: arial, sans-serif;
+    font-size: 16px;
+    color: #000000;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 4px;
+}

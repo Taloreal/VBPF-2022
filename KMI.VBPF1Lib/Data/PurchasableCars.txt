@@ -1,0 +1,7 @@
+Name	FriendlyName	Description	Price	ImageName
+Car0	Stallion	"Great wheels cheap! 190,000 miles and still running!"	4995	Car0
+Car1	Coarser	"Great value. Low mileage (60,000 miles) dependable car."	12995	Car1
+Car2	DMW	"Your dream car! Brand new. 100,000 mile bumper to bumper warranty."	24895	Car2
+Car3	Posh	Super hot convertible roadster	61000	Car3
+Car4	Yummer	4-Wheel Heaven	78000	Car4
+Car5	Diabalo	The Baddest Wheels Around	133000	Car5

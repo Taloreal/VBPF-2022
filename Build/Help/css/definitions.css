@@ -1,0 +1,16 @@
+/*Copyright 2004 Knowledge Matters, Inc.
+Code written by Brock Bouchard
+6-11-04*/
+
+p.phrase
+{
+	font-weight: bold;
+	font-size: 14px;
+	font-family: verdana, arial, sans-serif;
+}
+
+p.definition
+{
+	font-size: 12px;
+	font-family: verdana, arial, sans-serif;
+}

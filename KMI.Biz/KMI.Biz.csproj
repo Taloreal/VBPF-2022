@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E1077507-4D97-4CB9-89B4-27965761B963}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>KMI.Biz</RootNamespace>
+    <AssemblyName>KMI.Biz</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Build\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AmountNamePair.cs" />
+    <Compile Include="BizStateAdapter.cs" />
+    <Compile Include="CommentLog.cs" />
+    <Compile Include="ConsultantReport.cs" />
+    <Compile Include="ConsultantReportSection.cs" />
+    <Compile Include="frmAutoGrader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAutoGrader.Designer.cs">
+      <DependentUpon>frmAutoGrader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultant.Designer.cs">
+      <DependentUpon>frmConsultant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFinancials.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFinancials.Designer.cs">
+      <DependentUpon>frmFinancials.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMarketShare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMarketShare.Designer.cs">
+      <DependentUpon>frmMarketShare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProductReport.Designer.cs">
+      <DependentUpon>frmProductReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTransferCash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTransferCash.Designer.cs">
+      <DependentUpon>frmTransferCash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewComments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewComments.Designer.cs">
+      <DependentUpon>frmViewComments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVitalSigns.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVitalSigns.Designer.cs">
+      <DependentUpon>frmVitalSigns.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ValueComparer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmAutoGrader.resources" />
+    <EmbeddedResource Include="frmConsultant.resources" />
+    <EmbeddedResource Include="frmFinancials.resources" />
+    <EmbeddedResource Include="frmMarketShare.resources" />
+    <EmbeddedResource Include="frmProductReport.resources" />
+    <EmbeddedResource Include="frmTransferCash.resources" />
+    <EmbeddedResource Include="frmViewComments.resources" />
+    <EmbeddedResource Include="frmVitalSigns.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KMI.Sim\KMI.Sim.csproj">
+      <Project>{c252d706-e4c5-432e-a001-e55987615dfb}</Project>
+      <Name>KMI.Sim</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KMI.Utility\KMI.Utility.csproj">
+      <Project>{b6006305-6afb-40cd-98e4-2d5b11e01ee7}</Project>
+      <Name>KMI.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

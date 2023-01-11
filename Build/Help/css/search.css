@@ -1,0 +1,48 @@
+/*Copyright 2004 Knowledge Matters, Inc.
+Code written by Brock Bouchard
+6-11-04*/
+
+body
+{
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    margin: 4px;
+}
+
+td
+{
+    padding: 4px 0px 4px 0px;
+}
+
+#separatorCell
+{
+    text-align: center;
+    background-color: #DDDDDD;
+    font-weight: bold;
+}
+
+span
+{
+    color: #666666;
+    font-size: 10px;
+}
+
+a:link
+{
+    color: #0000FF;
+}
+
+a:visited
+{
+    color: #0000FF;
+}
+
+a:hover
+{
+    color: #0000FF;
+}
+
+a:active
+{
+    color: #0000FF;
+}

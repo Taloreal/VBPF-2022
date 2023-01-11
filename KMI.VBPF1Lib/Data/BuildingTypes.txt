@@ -1,0 +1,21 @@
+Index	Name	MaxOccupants	CanTakeSign
+0	Building	0	FALSE
+1	Apartments	5	TRUE
+2	Restaurant	12	TRUE
+3	Offices	7	TRUE
+4	Pizza Palace	9	FALSE
+5	College	11	FALSE
+6	Bus Stop	0	FALSE
+7	Bus Stop	0	FALSE
+8	Bank	0	FALSE
+9	Car Dealer	0	FALSE
+10	Empty Lot	0	FALSE
+11	Insurance	0	FALSE
+12	Store	0	FALSE
+13	Supermarket	0	FALSE
+14	Internet	0	FALSE
+15	Auto Garage	0	FALSE
+16	Investment	0	FALSE
+17	Pharmaceuticals	0	FALSE
+18	Internet Startup	0	FALSE
+19	Hospital	0	FALSE

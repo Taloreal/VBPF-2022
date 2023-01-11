@@ -1,0 +1,4 @@
+Name	FriendlyName	Description	Price	ImageName
+Tokens10	20 Bus Tokens	Tokens for 20 rides on the bus	20	BusTokens0
+Tokens50	60 Bus Tokens	Tokens for 60 rides on the bus	60	BusTokens1
+Tokens100	100 Bus Tokens	Tokens for 100 rides on the bus	100	BusTokens2

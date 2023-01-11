@@ -1,0 +1,27 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Search</title>
+<link rel="stylesheet" type="text/css" href="css/search.css" />
+<script type="text/javascript" src="javascript/search.js"></script>
+</head>
+
+<body onload="pageLoad();">
+
+  <form id="searchForm" method="post" action="javascript:go();">
+    <h2>Search</h2>
+    <p><input id="queryTextBox" name="queryTextBox" type="text" size="55"/></p>
+    <p><input type="submit" value="Submit" /><input type="reset" value="Reset" /></p>
+  </form>
+
+  <table width="100%">
+    <tr>
+      <td id="separatorCell">Results</td>
+    </tr>
+  </table>
+
+  <div id="resultsDiv"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C252D706-E4C5-432E-A001-E55987615DFB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>KMI.Sim</RootNamespace>
+    <AssemblyName>KMI.Sim</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Build\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\..\..\..\Games\Knowledge Matters\Virtual Business\Personal Finance (1.0.4.0)\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Academics\AcademicGod.cs" />
+    <Compile Include="Academics\frmChooseMathPack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Academics\frmChooseMathPack.Designer.cs">
+      <DependentUpon>frmChooseMathPack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Academics\frmPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Academics\frmPage.Designer.cs">
+      <DependentUpon>frmPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Academics\frmQuestions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Academics\frmQuestions.Designer.cs">
+      <DependentUpon>frmQuestions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Academics\frmTestResults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Academics\frmTestResults.Designer.cs">
+      <DependentUpon>frmTestResults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Academics\Level.cs" />
+    <Compile Include="Academics\LevelEndTestMessage.cs" />
+    <Compile Include="Academics\Page.cs" />
+    <Compile Include="Academics\PageBank.cs" />
+    <Compile Include="Academics\Question.cs" />
+    <Compile Include="Academics\QuestionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Academics\ShowPageMessage.cs" />
+    <Compile Include="Academics\TestResultControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ActiveObject.cs" />
+    <Compile Include="ClientEventHandlers.cs" />
+    <Compile Include="ComplaintBuffer.cs" />
+    <Compile Include="Drawables\AlphaDrawable.cs" />
+    <Compile Include="Drawables\CommentDrawable.cs" />
+    <Compile Include="Drawables\CompoundDrawable.cs" />
+    <Compile Include="Drawables\Drawable.cs" />
+    <Compile Include="Drawables\FlexDrawable.cs" />
+    <Compile Include="Drawables\LineDrawable.cs" />
+    <Compile Include="Drawables\PageDrawable.cs" />
+    <Compile Include="Drawables\PixelDrawable.cs" />
+    <Compile Include="Drawables\PolygonDrawable.cs" />
+    <Compile Include="Drawables\RectangleDrawable.cs" />
+    <Compile Include="Drawables\TextDrawable.cs" />
+    <Compile Include="Entity.cs" />
+    <Compile Include="EntityNotFoundException.cs" />
+    <Compile Include="frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbout.Designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmActionsJournal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmActionsJournal.Designer.cs">
+      <DependentUpon>frmActionsJournal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreateMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreateMessage.Designer.cs">
+      <DependentUpon>frmCreateMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDrawnReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDrawnReport.Designer.cs">
+      <DependentUpon>frmDrawnReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditSimSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditSimSettings.Designer.cs">
+      <DependentUpon>frmEditSimSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmExceptionHandler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExceptionHandler.Designer.cs">
+      <DependentUpon>frmExceptionHandler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmJoinMultiplayerSession.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmJoinMultiplayerSession.Designer.cs">
+      <DependentUpon>frmJoinMultiplayerSession.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLanguage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLanguage.Designer.cs">
+      <DependentUpon>frmLanguage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLessonsSimple.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLessonsSimple.Designer.cs">
+      <DependentUpon>frmLessonsSimple.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainBase.Designer.cs">
+      <DependentUpon>frmMainBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMessageBoxWithOptOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMessageBoxWithOptOut.Designer.cs">
+      <DependentUpon>frmMessageBoxWithOptOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMessages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMessages.Designer.cs">
+      <DependentUpon>frmMessages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMultiplayerRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMultiplayerRole.Designer.cs">
+      <DependentUpon>frmMultiplayerRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPlayMacro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPlayMacro.Designer.cs">
+      <DependentUpon>frmPlayMacro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProvideCash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProvideCash.Designer.cs">
+      <DependentUpon>frmProvideCash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRunTo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRunTo.Designer.cs">
+      <DependentUpon>frmRunTo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmScoreboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmScoreboard.Designer.cs">
+      <DependentUpon>frmScoreboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSetupWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSetupWizard.Designer.cs">
+      <DependentUpon>frmSetupWizard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStartChoices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStartChoices.Designer.cs">
+      <DependentUpon>frmStartChoices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStartMultiplayerSession.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStartMultiplayerSession.Designer.cs">
+      <DependentUpon>frmStartMultiplayerSession.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpload.Designer.cs">
+      <DependentUpon>frmUpload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUploadAlternative.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUploadAlternative.Designer.cs">
+      <DependentUpon>frmUploadAlternative.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameOverMessage.cs" />
+    <Compile Include="GeneralLedger.cs" />
+    <Compile Include="IActionForm.cs" />
+    <Compile Include="IConstrainedForm.cs" />
+    <Compile Include="Journal.cs" />
+    <Compile Include="JournalEntry.cs" />
+    <Compile Include="MacroAction.cs" />
+    <Compile Include="Map.cs" />
+    <Compile Include="MapV2.cs" />
+    <Compile Include="MessageControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModalMessage.cs" />
+    <Compile Include="ModalMessageDelegate.cs" />
+    <Compile Include="MovableActiveObject.cs" />
+    <Compile Include="MultiplayerRole.cs" />
+    <Compile Include="NodeV2.cs" />
+    <Compile Include="NotificationColor.cs" />
+    <Compile Include="Page.cs" />
+    <Compile Include="PathV2.cs" />
+    <Compile Include="Person.cs" />
+    <Compile Include="Place.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="PlayerMessage.cs" />
+    <Compile Include="PlayerMessageDelegate.cs" />
+    <Compile Include="PlayerType.cs" />
+    <Compile Include="PlaySoundDelegate.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyEventHandler.cs" />
+    <Compile Include="Queues\ISimQueueCollection.cs" />
+    <Compile Include="Queues\ISimQueueObject.cs" />
+    <Compile Include="Queues\ProcessingSimQueueSegment.cs" />
+    <Compile Include="Queues\SimQueue.cs" />
+    <Compile Include="Queues\SimQueueObject.cs" />
+    <Compile Include="Queues\SimQueueSegment.cs" />
+    <Compile Include="Resource.cs" />
+    <Compile Include="RunToDateReachedMessage.cs" />
+    <Compile Include="S.cs" />
+    <Compile Include="SimApplicationException.cs" />
+    <Compile Include="SimConstants.cs" />
+    <Compile Include="SimEngine.cs" />
+    <Compile Include="SimFactory.cs" />
+    <Compile Include="SimSettings.cs" />
+    <Compile Include="SimSpeed.cs" />
+    <Compile Include="SimState.cs" />
+    <Compile Include="SimStateAdapter.cs" />
+    <Compile Include="Simulator.cs" />
+    <Compile Include="StopDateReachedMessage.cs" />
+    <Compile Include="Surveys\frmSurvey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Surveys\frmSurvey.Designer.cs">
+      <DependentUpon>frmSurvey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Surveys\frmSurveyResults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Surveys\frmSurveyResults.Designer.cs">
+      <DependentUpon>frmSurveyResults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Surveys\frmSurveySegment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Surveys\frmSurveySegment.Designer.cs">
+      <DependentUpon>frmSurveySegment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Surveys\Survey.cs" />
+    <Compile Include="Surveys\SurveyQuestion.cs" />
+    <Compile Include="Surveys\SurveyResponse.cs" />
+    <Compile Include="Surveys\SurveySegmenter.cs" />
+    <Compile Include="ToolbarSponsored.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserAdminSettings.cs" />
+    <Compile Include="View.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Academics\frmChooseMathPack.resources" />
+    <EmbeddedResource Include="Academics\frmPage.resources" />
+    <EmbeddedResource Include="Academics\frmQuestions.resources" />
+    <EmbeddedResource Include="Academics\frmTestResults.resources" />
+    <EmbeddedResource Include="Academics\QuestionControl.resources" />
+    <EmbeddedResource Include="Academics\TestResultControl.resources" />
+    <EmbeddedResource Include="frmAbout.resources" />
+    <EmbeddedResource Include="frmActionsJournal.resources" />
+    <EmbeddedResource Include="frmCreateMessage.resources" />
+    <EmbeddedResource Include="frmDrawnReport.resources" />
+    <EmbeddedResource Include="frmEditSimSettings.resources" />
+    <EmbeddedResource Include="frmExceptionHandler.resources" />
+    <EmbeddedResource Include="frmJoinMultiplayerSession.resources" />
+    <EmbeddedResource Include="frmLanguage.resources" />
+    <EmbeddedResource Include="frmLessonsSimple.resources" />
+    <EmbeddedResource Include="frmMainBase.resources" />
+    <EmbeddedResource Include="frmMessageBoxWithOptOut.resources" />
+    <EmbeddedResource Include="frmMessages.resources" />
+    <EmbeddedResource Include="frmMultiplayerRole.resources" />
+    <EmbeddedResource Include="frmPlayMacro.resources" />
+    <EmbeddedResource Include="frmProvideCash.resources" />
+    <EmbeddedResource Include="frmRunTo.resources" />
+    <EmbeddedResource Include="frmScoreboard.resources" />
+    <EmbeddedResource Include="frmSetupWizard.resources" />
+    <EmbeddedResource Include="frmStartChoices.resources" />
+    <EmbeddedResource Include="frmStartMultiplayerSession.resources" />
+    <EmbeddedResource Include="frmUpload.resources" />
+    <EmbeddedResource Include="frmUploadAlternative.resources" />
+    <EmbeddedResource Include="Images\WarningBlue.gif" />
+    <EmbeddedResource Include="Images\WarningGreen.gif" />
+    <EmbeddedResource Include="Images\WarningRed.gif" />
+    <EmbeddedResource Include="Images\WarningYellow.gif" />
+    <EmbeddedResource Include="MessageControl.resources" />
+    <EmbeddedResource Include="Sim.resources" />
+    <EmbeddedResource Include="Surveys\frmSurvey.resources" />
+    <EmbeddedResource Include="Surveys\frmSurveyResults.resources" />
+    <EmbeddedResource Include="Surveys\frmSurveySegment.resources" />
+    <EmbeddedResource Include="ToolbarSponsored.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KMI.Utility\KMI.Utility.csproj">
+      <Project>{b6006305-6afb-40cd-98e4-2d5b11e01ee7}</Project>
+      <Name>KMI.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

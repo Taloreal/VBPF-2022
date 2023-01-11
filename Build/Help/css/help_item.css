@@ -1,0 +1,41 @@
+/*Copyright 2004 Knowledge Matters, Inc.
+Code written by Brock Bouchard
+6-11-04*/
+
+body
+{
+    margin: 0px;
+}
+
+p
+{
+    font-family: arial, sans-serif;
+    font-size: 10px;
+    line-height: 12px;
+    margin-top: 0px;
+}
+
+p.links
+{
+    font-weight: bold;
+}
+
+a:link
+{
+    color: #0000FF;
+}
+
+a:visited
+{
+    color: #0000FF;
+}
+
+a:hover
+{
+    color: #0000FF;
+}
+
+a:active
+{
+    color: #0000FF;
+}

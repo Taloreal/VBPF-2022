@@ -1,0 +1,28 @@
+Name	FriendlyName	Description	Price	ImageName
+Bed0	Bedroom Set	Easy sleeping bedroom set.	699	Bed0
+Bed1	Bedroom Set	Plush bedroom set.	1299	Bed1
+Bed2	Bedroom Set	Gorgeous designer bedroom set.	1599	Bed2
+Couch0	Living Room Set	"Couch, two chairs, and coffee table."	1199	Couch0
+Couch1	Living Room Set	"Luxury couch, chairs, and coffee table."	1799	Couch1
+Couch2	Living Room Set	"Luxury couch, chairs, and coffee table."	1799	Couch2
+Couch3	Living Room Set	"Luxury couch, chairs, and coffee table."	1799	Couch3
+Computer	Notebook Computer	Basic computer with LCD monitor.	599	Computer
+TV0	Television Set	32-inch Magnatron TV.	499	TVFront0
+TV1	Plasma TV	52-inch Plasma TV.	1499	TVFront1
+Stereo0	Boombox	Good tunes.	99	Stereo0
+Stereo1	Stereo	Great party sound.	599	Stereo1
+Stereo2	Super Sound System	The system that rocks your world.	1199	Stereo2
+TreadMill	Treadmill	Heavy duty treadmill. Up to 10 mph and 10 degrees incline.	1049	TreadMill
+DDR	Dance Revolt	The ultimate party adventure.	499	DDR0
+Carpet0	Carpet	Simple area rug.	99	Carpet0
+Carpet1	Carpet	"Nice rug, great price."	199	Carpet1
+Carpet2	Carpet	Designer rug.	395	Carpet2
+Carpet3	Carpet	Handmade oriental rug.	690	Carpet3
+Carpet4	Carpet	Vintage collector's oriental rug.	990	Carpet4
+Art0	Art	Roadster photograph.	99	Art0
+Art1	Art	Tacky velvet painting.	199	Art1
+Art2	Art	Nice print of race car.	695	Art2
+Art3	Art	Reproduction of famous painting.	1150	Art3
+Art4	Art	Nice original painting.	2400	Art4
+Art5	Art	Motorcycle print signed by star racer.	9750	Art5
+Art6	Art	Beautiful original painting.	19000	Art6

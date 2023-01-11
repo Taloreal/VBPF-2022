@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2E8D4C9F-599B-4135-B73D-97E574CEDFD3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>KMI.Biz.City</RootNamespace>
+    <AssemblyName>KMI.Biz.City</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Build\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Building.cs" />
+    <Compile Include="BuildingDrawable.cs" />
+    <Compile Include="BuildingType.cs" />
+    <Compile Include="City.cs" />
+    <Compile Include="CityBlock.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Traffic.cs" />
+    <Compile Include="TrafficDrawable.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KMI.Biz\KMI.Biz.csproj">
+      <Project>{e1077507-4d97-4cb9-89b4-27965761b963}</Project>
+      <Name>KMI.Biz</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KMI.Sim\KMI.Sim.csproj">
+      <Project>{c252d706-e4c5-432e-a001-e55987615dfb}</Project>
+      <Name>KMI.Sim</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KMI.Utility\KMI.Utility.csproj">
+      <Project>{b6006305-6afb-40cd-98e4-2d5b11e01ee7}</Project>
+      <Name>KMI.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,9 @@
+Name	FriendlyName	Description	Price	ImageName
+Small Bag	One Bag of Groceries	Food for 14 meals. You need 2 meals per day.	74	BagOfFood0
+Medium Bag	Two Bags of Groceries	Food 28 meals. You need 2 meals per day.	148	BagOfFood1
+Large Bag	Three Bags of Groceries	Food 42 meals. You need 2 meals per day.	222	BagOfFood2
+Platter0	Bowls of Popcorn	For 10 party-goers. Not useful for nutrition.	6	Platter0
+Platter1	Veggies w/ Dip	For 10 party-goers. Not useful for nutrition.	25	Platter1
+Platter2	Salsa & Chips	For 10 party-goers. Not useful for nutrition.	35	Platter2
+Platter3	Sushi Platters	For 10 party-goers. Not useful for nutrition.	110	Platter3
+Platter4	Lobster Tails	For 10 party-goers. Not useful for nutrition.	180	Platter4

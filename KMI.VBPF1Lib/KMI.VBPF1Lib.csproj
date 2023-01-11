@@ -1,0 +1,1092 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B5962412-06FA-4807-8698-57E92FFF498D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>KMI.VBPF1Lib</RootNamespace>
+    <AssemblyName>KMI.VBPF1Lib</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>4096</FileAlignment>
+    <ApplicationIcon>KMI.VBPF1Lib.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Build\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="A.cs" />
+    <Compile Include="AccountantsReport.cs" />
+    <Compile Include="AllocationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="App.cs" />
+    <Compile Include="AppBuilding.cs" />
+    <Compile Include="AppBuildingDrawable.cs" />
+    <Compile Include="AppCity.cs" />
+    <Compile Include="AppConstants.cs" />
+    <Compile Include="AppEntity.cs" />
+    <Compile Include="AppFactory.cs" />
+    <Compile Include="AppSimSettings.cs" />
+    <Compile Include="AppSimState.cs" />
+    <Compile Include="AppStateAdapter.cs" />
+    <Compile Include="AttendClass.cs" />
+    <Compile Include="BankAccount.cs" />
+    <Compile Include="BeSick.cs" />
+    <Compile Include="Bill.cs" />
+    <Compile Include="BillDrawable.cs" />
+    <Compile Include="BondFund.cs" />
+    <Compile Include="Bus.cs" />
+    <Compile Include="Car.cs" />
+    <Compile Include="CashDrawable.cs" />
+    <Compile Include="Check.cs" />
+    <Compile Include="CheckDrawable.cs" />
+    <Compile Include="CheckingAccount.cs" />
+    <Compile Include="CheckRegisterEntry.cs" />
+    <Compile Include="CityNavDrawable.cs" />
+    <Compile Include="CityView.cs" />
+    <Compile Include="Classified.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Classroom.cs" />
+    <Compile Include="ComputerDrawable.cs" />
+    <Compile Include="Course.cs" />
+    <Compile Include="CreditCardAccount.cs" />
+    <Compile Include="Custom_Controls\CardControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Custom_Controls\CheckControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Custom_Controls\ItemListing.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Custom_Controls\RecurringPaymentControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DailyRoutine.cs" />
+    <Compile Include="Dance.cs" />
+    <Compile Include="Dwelling.cs" />
+    <Compile Include="DwellingOffer.cs" />
+    <Compile Include="Eat.cs" />
+    <Compile Include="Exercise.cs" />
+    <Compile Include="F1040EZ.cs" />
+    <Compile Include="F1099Int.cs" />
+    <Compile Include="FastFoodStore.cs" />
+    <Compile Include="frm401K.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm401K.Designer.cs">
+      <DependentUpon>frm401K.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAppProvideCash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAppProvideCash.Designer.cs">
+      <DependentUpon>frmAppProvideCash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAutoInsurance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAutoInsurance.Designer.cs">
+      <DependentUpon>frmAutoInsurance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBankStatement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBankStatement.Designer.cs">
+      <DependentUpon>frmBankStatement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChangeTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChangeTask.Designer.cs">
+      <DependentUpon>frmChangeTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCheckbook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCheckbook.Designer.cs">
+      <DependentUpon>frmCheckbook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChooseCharacter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChooseCharacter.Designer.cs">
+      <DependentUpon>frmChooseCharacter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChooseEventTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChooseEventTime.Designer.cs">
+      <DependentUpon>frmChooseEventTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCloseAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCloseAccount.Designer.cs">
+      <DependentUpon>frmCloseAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreditCardStatement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreditCardStatement.Designer.cs">
+      <DependentUpon>frmCreditCardStatement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreditReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreditReport.Designer.cs">
+      <DependentUpon>frmCreditReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreditScore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreditScore.Designer.cs">
+      <DependentUpon>frmCreditScore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDailyRoutine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDailyRoutine.Designer.cs">
+      <DependentUpon>frmDailyRoutine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDepositChecks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDepositChecks.Designer.cs">
+      <DependentUpon>frmDepositChecks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDepositWithdrawCash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDepositWithdrawCash.Designer.cs">
+      <DependentUpon>frmDepositWithdrawCash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHealth2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHealth2.Designer.cs">
+      <DependentUpon>frmHealth2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHealthInsurance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHealthInsurance.Designer.cs">
+      <DependentUpon>frmHealthInsurance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHomeOwnersInsurance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHomeOwnersInsurance.Designer.cs">
+      <DependentUpon>frmHomeOwnersInsurance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInvestmentStatement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInvestmentStatement.Designer.cs">
+      <DependentUpon>frmInvestmentStatement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmJobApplication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmJobApplication.Designer.cs">
+      <DependentUpon>frmJobApplication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLegend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLegend.Designer.cs">
+      <DependentUpon>frmLegend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoanStatement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoanStatement.Designer.cs">
+      <DependentUpon>frmLoanStatement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMessageBoxWithIcon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMessageBoxWithIcon.Designer.cs">
+      <DependentUpon>frmMessageBoxWithIcon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMethodOfPay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMethodOfPay.Designer.cs">
+      <DependentUpon>frmMethodOfPay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMortgage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMortgage.Designer.cs">
+      <DependentUpon>frmMortgage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMultiplayerPlayers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMultiplayerPlayers.Designer.cs">
+      <DependentUpon>frmMultiplayerPlayers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMyPortfolio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMyPortfolio.Designer.cs">
+      <DependentUpon>frmMyPortfolio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOnlineBanking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOnlineBanking.Designer.cs">
+      <DependentUpon>frmOnlineBanking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOpenBankAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOpenBankAccount.Designer.cs">
+      <DependentUpon>frmOpenBankAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPayBills.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPayBills.Designer.cs">
+      <DependentUpon>frmPayBills.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPayBy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPayBy.Designer.cs">
+      <DependentUpon>frmPayBy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPayForCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPayForCar.Designer.cs">
+      <DependentUpon>frmPayForCar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPayInCash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPayInCash.Designer.cs">
+      <DependentUpon>frmPayInCash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPayStubs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPayStubs.Designer.cs">
+      <DependentUpon>frmPayStubs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPersonalBalanceSheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPersonalBalanceSheet.Designer.cs">
+      <DependentUpon>frmPersonalBalanceSheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRentersInsurance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRentersInsurance.Designer.cs">
+      <DependentUpon>frmRentersInsurance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmResearchFunds.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmResearchFunds.Designer.cs">
+      <DependentUpon>frmResearchFunds.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmResume.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmResume.Designer.cs">
+      <DependentUpon>frmResume.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRetirementStatement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRetirementStatement.Designer.cs">
+      <DependentUpon>frmRetirementStatement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectCard.Designer.cs">
+      <DependentUpon>frmSelectCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmShop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShop.Designer.cs">
+      <DependentUpon>frmShop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSnapshot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSnapshot.Designer.cs">
+      <DependentUpon>frmSnapshot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStudentLoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStudentLoan.Designer.cs">
+      <DependentUpon>frmStudentLoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTaxes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTaxes.Designer.cs">
+      <DependentUpon>frmTaxes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTaxTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTaxTable.Designer.cs">
+      <DependentUpon>frmTaxTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTrade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTrade.Designer.cs">
+      <DependentUpon>frmTrade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTransferFunds.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTransferFunds.Designer.cs">
+      <DependentUpon>frmTransferFunds.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTransportation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTransportation.Designer.cs">
+      <DependentUpon>frmTransportation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmW4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmW4.Designer.cs">
+      <DependentUpon>frmW4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fund.cs" />
+    <Compile Include="FundControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FW2.cs" />
+    <Compile Include="God.cs" />
+    <Compile Include="InsideView.cs" />
+    <Compile Include="InstallmentLoan.cs" />
+    <Compile Include="InsurancePolicy.cs" />
+    <Compile Include="InvestmentAccount.cs" />
+    <Compile Include="ITaxForm.cs" />
+    <Compile Include="Job.cs" />
+    <Compile Include="JobApplication.cs" />
+    <Compile Include="MoneyMarketFund.cs" />
+    <Compile Include="Mortgage.cs" />
+    <Compile Include="Offering.cs" />
+    <Compile Include="Office.cs" />
+    <Compile Include="OneTimeEvent.cs" />
+    <Compile Include="PaletteDrawable.cs" />
+    <Compile Include="PayStub.cs" />
+    <Compile Include="Pedestrian.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurchasableItem.cs" />
+    <Compile Include="RecurringPayment.cs" />
+    <Compile Include="RefrigeratorDrawable.cs" />
+    <Compile Include="RegisterLine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Relax.cs" />
+    <Compile Include="SavingsAccount.cs" />
+    <Compile Include="ShopFastFood.cs" />
+    <Compile Include="Sleep.cs" />
+    <Compile Include="StockFund.cs" />
+    <Compile Include="Surprise.cs" />
+    <Compile Include="Task.cs" />
+    <Compile Include="TaxReturn.cs" />
+    <Compile Include="Transaction.cs" />
+    <Compile Include="TravelByBus.cs" />
+    <Compile Include="TravelByCar.cs" />
+    <Compile Include="TravelByFoot.cs" />
+    <Compile Include="TravelTask.cs" />
+    <Compile Include="TurboMovableActiveObject.cs" />
+    <Compile Include="VBPFPerson.cs" />
+    <Compile Include="WorkCounterFastFood.cs" />
+    <Compile Include="WorkDrugRep.cs" />
+    <Compile Include="WorkHospital1.cs" />
+    <Compile Include="WorkHospital2.cs" />
+    <Compile Include="WorkHospital3.cs" />
+    <Compile Include="WorkInternet1.cs" />
+    <Compile Include="WorkInternet2.cs" />
+    <Compile Include="WorkInternet3.cs" />
+    <Compile Include="WorkInvisible.cs" />
+    <Compile Include="WorkMgrFastFood.cs" />
+    <Compile Include="WorkOfficeDesk.cs" />
+    <Compile Include="WorkOfficeMgr.cs" />
+    <Compile Include="WorkOfficeSup.cs" />
+    <Compile Include="WorkPizzaGuy.cs" />
+    <Compile Include="WorkStoreMgrFastFood.cs" />
+    <Compile Include="WorkTask.cs" />
+    <Compile Include="WorkTravellingSalesman.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AllocationControl.resources" />
+    <EmbeddedResource Include="App.resources" />
+    <EmbeddedResource Include="Classified.resources" />
+    <EmbeddedResource Include="Custom_Controls\CardControl.resources" />
+    <EmbeddedResource Include="Custom_Controls\CheckControl.resources" />
+    <EmbeddedResource Include="Custom_Controls\ItemListing.resources" />
+    <EmbeddedResource Include="Custom_Controls\RecurringPaymentControl.resources" />
+    <EmbeddedResource Include="Data\BuildingTypes.txt" />
+    <EmbeddedResource Include="Data\ClassMap.xml" />
+    <EmbeddedResource Include="Data\HomeMap.xml" />
+    <EmbeddedResource Include="Data\MultiplayerRoles.txt" />
+    <EmbeddedResource Include="Data\PurchasableAutoSupplies.txt" />
+    <EmbeddedResource Include="Data\PurchasableBusTokens.txt" />
+    <EmbeddedResource Include="Data\PurchasableCars.txt" />
+    <EmbeddedResource Include="Data\PurchasableFood.txt" />
+    <EmbeddedResource Include="Data\PurchasableItems.txt" />
+    <EmbeddedResource Include="Data\Surprises.txt" />
+    <EmbeddedResource Include="Data\Work0Map.xml" />
+    <EmbeddedResource Include="Data\Work1Map.xml" />
+    <EmbeddedResource Include="frm401K.resources" />
+    <EmbeddedResource Include="frmAppProvideCash.resources" />
+    <EmbeddedResource Include="frmAutoInsurance.resources" />
+    <EmbeddedResource Include="frmBankStatement.resources" />
+    <EmbeddedResource Include="frmChangeTask.resources" />
+    <EmbeddedResource Include="frmCheckbook.resources" />
+    <EmbeddedResource Include="frmChooseCharacter.resources" />
+    <EmbeddedResource Include="frmChooseEventTime.resources" />
+    <EmbeddedResource Include="frmCloseAccount.resources" />
+    <EmbeddedResource Include="frmCreditCardStatement.resources" />
+    <EmbeddedResource Include="frmCreditReport.resources" />
+    <EmbeddedResource Include="frmCreditScore.resources" />
+    <EmbeddedResource Include="frmDailyRoutine.resources" />
+    <EmbeddedResource Include="frmDepositChecks.resources" />
+    <EmbeddedResource Include="frmDepositWithdrawCash.resources" />
+    <EmbeddedResource Include="frmHealth2.resources" />
+    <EmbeddedResource Include="frmHealthInsurance.resources" />
+    <EmbeddedResource Include="frmHomeOwnersInsurance.resources" />
+    <EmbeddedResource Include="frmJobApplication.resources" />
+    <EmbeddedResource Include="frmLegend.resources" />
+    <EmbeddedResource Include="frmMain.resources" />
+    <EmbeddedResource Include="frmMessageBoxWithIcon.resources" />
+    <EmbeddedResource Include="frmMethodOfPay.resources" />
+    <EmbeddedResource Include="frmMortgage.resources" />
+    <EmbeddedResource Include="frmMultiplayerPlayers.resources" />
+    <EmbeddedResource Include="frmMyPortfolio.resources" />
+    <EmbeddedResource Include="frmOnlineBanking.resources" />
+    <EmbeddedResource Include="frmOpenBankAccount.resources" />
+    <EmbeddedResource Include="frmPayBills.resources" />
+    <EmbeddedResource Include="frmPayBy.resources" />
+    <EmbeddedResource Include="frmPayForCar.resources" />
+    <EmbeddedResource Include="frmPayInCash.resources" />
+    <EmbeddedResource Include="frmPayStubs.resources" />
+    <EmbeddedResource Include="frmPersonalBalanceSheet.resources" />
+    <EmbeddedResource Include="frmRentersInsurance.resources" />
+    <EmbeddedResource Include="frmResearchFunds.resources" />
+    <EmbeddedResource Include="frmResume.resources" />
+    <EmbeddedResource Include="frmSelectCard.resources" />
+    <EmbeddedResource Include="frmShop.resources" />
+    <EmbeddedResource Include="frmSnapshot.resources" />
+    <EmbeddedResource Include="frmStudentLoan.resources" />
+    <EmbeddedResource Include="frmTaxes.resources" />
+    <EmbeddedResource Include="frmTaxTable.resources" />
+    <EmbeddedResource Include="frmTrade.resources" />
+    <EmbeddedResource Include="frmTransferFunds.resources" />
+    <EmbeddedResource Include="frmTransportation.resources" />
+    <EmbeddedResource Include="frmW4.resources" />
+    <EmbeddedResource Include="FundControl.resources" />
+    <EmbeddedResource Include="Images\1040EZ.png" />
+    <EmbeddedResource Include="Images\Arrow.png" />
+    <EmbeddedResource Include="Images\CityNavIcon.png" />
+    <EmbeddedResource Include="Images\CityView\Building0.png" />
+    <EmbeddedResource Include="Images\CityView\Building1.png" />
+    <EmbeddedResource Include="Images\CityView\Building10.png" />
+    <EmbeddedResource Include="Images\CityView\Building11.png" />
+    <EmbeddedResource Include="Images\CityView\Building12.png" />
+    <EmbeddedResource Include="Images\CityView\Building13.png" />
+    <EmbeddedResource Include="Images\CityView\Building14.png" />
+    <EmbeddedResource Include="Images\CityView\Building15.png" />
+    <EmbeddedResource Include="Images\CityView\Building16.png" />
+    <EmbeddedResource Include="Images\CityView\Building17.png" />
+    <EmbeddedResource Include="Images\CityView\Building18.png" />
+    <EmbeddedResource Include="Images\CityView\Building19.png" />
+    <EmbeddedResource Include="Images\CityView\Building2.png" />
+    <EmbeddedResource Include="Images\CityView\Building3.png" />
+    <EmbeddedResource Include="Images\CityView\Building4.png" />
+    <EmbeddedResource Include="Images\CityView\Building5.png" />
+    <EmbeddedResource Include="Images\CityView\Building6.png" />
+    <EmbeddedResource Include="Images\CityView\Building7.png" />
+    <EmbeddedResource Include="Images\CityView\Building8.png" />
+    <EmbeddedResource Include="Images\CityView\Building9.png" />
+    <EmbeddedResource Include="Images\CityView\BusNE.png" />
+    <EmbeddedResource Include="Images\CityView\BusNW.png" />
+    <EmbeddedResource Include="Images\CityView\BusSE.png" />
+    <EmbeddedResource Include="Images\CityView\BusSW.png" />
+    <EmbeddedResource Include="Images\CityView\Car0.png" />
+    <EmbeddedResource Include="Images\CityView\Car1.png" />
+    <EmbeddedResource Include="Images\CityView\Car2.png" />
+    <EmbeddedResource Include="Images\CityView\Car3.png" />
+    <EmbeddedResource Include="Images\CityView\Car4.png" />
+    <EmbeddedResource Include="Images\CityView\Car5.png" />
+    <EmbeddedResource Include="Images\CityView\CarNESW.gif" />
+    <EmbeddedResource Include="Images\CityView\CarNWSE.gif" />
+    <EmbeddedResource Include="Images\CityView\CarOnLift.png" />
+    <EmbeddedResource Include="Images\CityView\City.png" />
+    <EmbeddedResource Include="Images\CityView\GasCan0.png" />
+    <EmbeddedResource Include="Images\CityView\GasCan1.png" />
+    <EmbeddedResource Include="Images\CityView\GasCan2.png" />
+    <EmbeddedResource Include="Images\CityView\MotorOil.png" />
+    <EmbeddedResource Include="Images\CityView\Walker.png" />
+    <EmbeddedResource Include="Images\ClassView\FemaleTeacherBoardSW0000.png" />
+    <EmbeddedResource Include="Images\ClassView\FemaleTeacherBoardSW0001.png" />
+    <EmbeddedResource Include="Images\ClassView\FemaleTeacherBoardSW0002.png" />
+    <EmbeddedResource Include="Images\ClassView\FemaleTeacherBoardSW0003.png" />
+    <EmbeddedResource Include="Images\ClassView\FemaleTeacherBoardSW0004.png" />
+    <EmbeddedResource Include="Images\ClassView\FemaleTeacherBoardSW0005.png" />
+    <EmbeddedResource Include="Images\ClassView\FemaleTeacherBoardSW0006.png" />
+    <EmbeddedResource Include="Images\ClassView\FemaleTeacherBoardSW0007.png" />
+    <EmbeddedResource Include="Images\ClassView\FemaleTeacherBoardSW0008.png" />
+    <EmbeddedResource Include="Images\ClassView\FemaleTeacherBoardSW0009.png" />
+    <EmbeddedResource Include="Images\ClassView\FemaleTeacherBoardSW0010.png" />
+    <EmbeddedResource Include="Images\ClassView\FemaleTeacherBoardSW0011.png" />
+    <EmbeddedResource Include="Images\ClassView\FemaleTeacherBoardSW0012.png" />
+    <EmbeddedResource Include="Images\ClassView\FemaleTeacherBoardSW0013.png" />
+    <EmbeddedResource Include="Images\ClassView\FemaleTeacherBoardSW0014.png" />
+    <EmbeddedResource Include="Images\ClassView\FemaleTeacherBoardSW0015.png" />
+    <EmbeddedResource Include="Images\ClassView\FemaleTeacherBoardSW0016.png" />
+    <EmbeddedResource Include="Images\ClassView\FemaleTeacherBoardSW0017.png" />
+    <EmbeddedResource Include="Images\ClassView\FemaleTeacherBoardSW0018.png" />
+    <EmbeddedResource Include="Images\ClassView\FemaleTeacherBoardSW0019.png" />
+    <EmbeddedResource Include="Images\ClassView\FemaleTeacherBoardSW0020.png" />
+    <EmbeddedResource Include="Images\ClassView\FemaleTeacherBoardSW0021.png" />
+    <EmbeddedResource Include="Images\ClassView\FemaleTeacherBoardSW0022.png" />
+    <EmbeddedResource Include="Images\ClassView\FemaleTeacherBoardSW0023.png" />
+    <EmbeddedResource Include="Images\ClassView\FemaleTeacherBoardSW0024.png" />
+    <EmbeddedResource Include="Images\ClassView\FemaleTeacherBoardSW0025.png" />
+    <EmbeddedResource Include="Images\ClassView\FemaleTeacherBoardSW0026.png" />
+    <EmbeddedResource Include="Images\ClassView\FemaleTeacherBoardSW0027.png" />
+    <EmbeddedResource Include="Images\ClassView\FemaleTeacherStandSW.gif" />
+    <EmbeddedResource Include="Images\ClassView\MaleTeacherBoardSW0000.png" />
+    <EmbeddedResource Include="Images\ClassView\MaleTeacherBoardSW0001.png" />
+    <EmbeddedResource Include="Images\ClassView\MaleTeacherBoardSW0002.png" />
+    <EmbeddedResource Include="Images\ClassView\MaleTeacherBoardSW0003.png" />
+    <EmbeddedResource Include="Images\ClassView\MaleTeacherBoardSW0004.png" />
+    <EmbeddedResource Include="Images\ClassView\MaleTeacherBoardSW0005.png" />
+    <EmbeddedResource Include="Images\ClassView\MaleTeacherBoardSW0006.png" />
+    <EmbeddedResource Include="Images\ClassView\MaleTeacherBoardSW0007.png" />
+    <EmbeddedResource Include="Images\ClassView\MaleTeacherBoardSW0008.png" />
+    <EmbeddedResource Include="Images\ClassView\MaleTeacherBoardSW0009.png" />
+    <EmbeddedResource Include="Images\ClassView\MaleTeacherBoardSW0010.png" />
+    <EmbeddedResource Include="Images\ClassView\MaleTeacherBoardSW0011.png" />
+    <EmbeddedResource Include="Images\ClassView\MaleTeacherBoardSW0012.png" />
+    <EmbeddedResource Include="Images\ClassView\MaleTeacherBoardSW0013.png" />
+    <EmbeddedResource Include="Images\ClassView\MaleTeacherBoardSW0014.png" />
+    <EmbeddedResource Include="Images\ClassView\MaleTeacherBoardSW0015.png" />
+    <EmbeddedResource Include="Images\ClassView\MaleTeacherBoardSW0016.png" />
+    <EmbeddedResource Include="Images\ClassView\MaleTeacherBoardSW0017.png" />
+    <EmbeddedResource Include="Images\ClassView\MaleTeacherBoardSW0018.png" />
+    <EmbeddedResource Include="Images\ClassView\MaleTeacherBoardSW0019.png" />
+    <EmbeddedResource Include="Images\ClassView\MaleTeacherBoardSW0020.png" />
+    <EmbeddedResource Include="Images\ClassView\MaleTeacherBoardSW0021.png" />
+    <EmbeddedResource Include="Images\ClassView\MaleTeacherBoardSW0022.png" />
+    <EmbeddedResource Include="Images\ClassView\MaleTeacherBoardSW0023.png" />
+    <EmbeddedResource Include="Images\ClassView\MaleTeacherBoardSW0024.png" />
+    <EmbeddedResource Include="Images\ClassView\MaleTeacherBoardSW0025.png" />
+    <EmbeddedResource Include="Images\ClassView\MaleTeacherBoardSW0026.png" />
+    <EmbeddedResource Include="Images\ClassView\MaleTeacherBoardSW0027.png" />
+    <EmbeddedResource Include="Images\ClassView\MaleTeacherStandSW.gif" />
+    <EmbeddedResource Include="Images\ClassView\OpenBook.png" />
+    <EmbeddedResource Include="Images\ClassView\SchoolChairBack.png" />
+    <EmbeddedResource Include="Images\ClassView\SchoolChairBottom.png" />
+    <EmbeddedResource Include="Images\ClassView\SchoolFloor.png" />
+    <EmbeddedResource Include="Images\ClassView\Table.png" />
+    <EmbeddedResource Include="Images\ClassView\TeacherDesk.png" />
+    <EmbeddedResource Include="Images\HomeView\ApartmentBackBedroomWallRight.png" />
+    <EmbeddedResource Include="Images\HomeView\ApartmentFloor2.png" />
+    <EmbeddedResource Include="Images\HomeView\ApartmentKitchenInteriorWall.png" />
+    <EmbeddedResource Include="Images\HomeView\ApartmentKitchenWallLeft.png" />
+    <EmbeddedResource Include="Images\HomeView\ApartmentSideBedroomWallBackRight.png" />
+    <EmbeddedResource Include="Images\HomeView\Art0.png" />
+    <EmbeddedResource Include="Images\HomeView\Art1.png" />
+    <EmbeddedResource Include="Images\HomeView\Art2.png" />
+    <EmbeddedResource Include="Images\HomeView\Art3.png" />
+    <EmbeddedResource Include="Images\HomeView\Art4.png" />
+    <EmbeddedResource Include="Images\HomeView\Art5.png" />
+    <EmbeddedResource Include="Images\HomeView\Art6.png" />
+    <EmbeddedResource Include="Images\HomeView\BagOfFood0.png" />
+    <EmbeddedResource Include="Images\HomeView\BagOfFood1.png" />
+    <EmbeddedResource Include="Images\HomeView\BagOfFood2.png" />
+    <EmbeddedResource Include="Images\HomeView\Bed0.png" />
+    <EmbeddedResource Include="Images\HomeView\Bed1.png" />
+    <EmbeddedResource Include="Images\HomeView\Bed2.png" />
+    <EmbeddedResource Include="Images\HomeView\BuiltInDesk.png" />
+    <EmbeddedResource Include="Images\HomeView\BusToken.png" />
+    <EmbeddedResource Include="Images\HomeView\BusTokens0.png" />
+    <EmbeddedResource Include="Images\HomeView\BusTokens1.png" />
+    <EmbeddedResource Include="Images\HomeView\BusTokens2.png" />
+    <EmbeddedResource Include="Images\HomeView\Carpet0.png" />
+    <EmbeddedResource Include="Images\HomeView\Carpet1.png" />
+    <EmbeddedResource Include="Images\HomeView\Carpet2.png" />
+    <EmbeddedResource Include="Images\HomeView\Carpet3.png" />
+    <EmbeddedResource Include="Images\HomeView\Carpet4.png" />
+    <EmbeddedResource Include="Images\HomeView\Chair.png" />
+    <EmbeddedResource Include="Images\HomeView\Chair0.png" />
+    <EmbeddedResource Include="Images\HomeView\Chair1.png" />
+    <EmbeddedResource Include="Images\HomeView\Chair2.png" />
+    <EmbeddedResource Include="Images\HomeView\Chair3.png" />
+    <EmbeddedResource Include="Images\HomeView\ChairBack0.png" />
+    <EmbeddedResource Include="Images\HomeView\ChairBack1.png" />
+    <EmbeddedResource Include="Images\HomeView\ChairBack2.png" />
+    <EmbeddedResource Include="Images\HomeView\ChairBack3.png" />
+    <EmbeddedResource Include="Images\HomeView\Check.png" />
+    <EmbeddedResource Include="Images\HomeView\CoffeeTable0.png" />
+    <EmbeddedResource Include="Images\HomeView\CoffeeTable1.png" />
+    <EmbeddedResource Include="Images\HomeView\CoffeeTable2.png" />
+    <EmbeddedResource Include="Images\HomeView\CoffeeTable3.png" />
+    <EmbeddedResource Include="Images\HomeView\Computer.png" />
+    <EmbeddedResource Include="Images\HomeView\Couch0.png" />
+    <EmbeddedResource Include="Images\HomeView\Couch1.png" />
+    <EmbeddedResource Include="Images\HomeView\Couch2.png" />
+    <EmbeddedResource Include="Images\HomeView\Couch3.png" />
+    <EmbeddedResource Include="Images\HomeView\DDR0.png" />
+    <EmbeddedResource Include="Images\HomeView\DDR1.png" />
+    <EmbeddedResource Include="Images\HomeView\DDR2.png" />
+    <EmbeddedResource Include="Images\HomeView\DDR3.png" />
+    <EmbeddedResource Include="Images\HomeView\DDR4.png" />
+    <EmbeddedResource Include="Images\HomeView\Decor.png" />
+    <EmbeddedResource Include="Images\HomeView\Diploma.png" />
+    <EmbeddedResource Include="Images\HomeView\EndTable2.png" />
+    <EmbeddedResource Include="Images\HomeView\EndTableSE.png" />
+    <EmbeddedResource Include="Images\HomeView\FloorCabinet.png" />
+    <EmbeddedResource Include="Images\HomeView\IceBag.png" />
+    <EmbeddedResource Include="Images\HomeView\InteriorWall1.png" />
+    <EmbeddedResource Include="Images\HomeView\InteriorWall2.png" />
+    <EmbeddedResource Include="Images\HomeView\KitchenBar.png" />
+    <EmbeddedResource Include="Images\HomeView\KitchenBar3.png" />
+    <EmbeddedResource Include="Images\HomeView\Lamp.png" />
+    <EmbeddedResource Include="Images\HomeView\Lamp2.png" />
+    <EmbeddedResource Include="Images\HomeView\MirrorUnit.png" />
+    <EmbeddedResource Include="Images\HomeView\Money.png" />
+    <EmbeddedResource Include="Images\HomeView\Oven.png" />
+    <EmbeddedResource Include="Images\HomeView\Paper.png" />
+    <EmbeddedResource Include="Images\HomeView\Plant.png" />
+    <EmbeddedResource Include="Images\HomeView\PlateOfFood.png" />
+    <EmbeddedResource Include="Images\HomeView\Platter0.png" />
+    <EmbeddedResource Include="Images\HomeView\Platter0Small.png" />
+    <EmbeddedResource Include="Images\HomeView\Platter1.png" />
+    <EmbeddedResource Include="Images\HomeView\Platter1Small.png" />
+    <EmbeddedResource Include="Images\HomeView\Platter2.png" />
+    <EmbeddedResource Include="Images\HomeView\Platter2Small.png" />
+    <EmbeddedResource Include="Images\HomeView\Platter3.png" />
+    <EmbeddedResource Include="Images\HomeView\Platter3Small.png" />
+    <EmbeddedResource Include="Images\HomeView\Platter4.png" />
+    <EmbeddedResource Include="Images\HomeView\Platter4Small.png" />
+    <EmbeddedResource Include="Images\HomeView\Refrigerator.png" />
+    <EmbeddedResource Include="Images\HomeView\Stereo0.png" />
+    <EmbeddedResource Include="Images\HomeView\Stereo1.png" />
+    <EmbeddedResource Include="Images\HomeView\Stereo2.png" />
+    <EmbeddedResource Include="Images\HomeView\TreadMill.png" />
+    <EmbeddedResource Include="Images\HomeView\TVBack0.png" />
+    <EmbeddedResource Include="Images\HomeView\TVBack1.png" />
+    <EmbeddedResource Include="Images\HomeView\TVFront0.png" />
+    <EmbeddedResource Include="Images\HomeView\TVFront1.png" />
+    <EmbeddedResource Include="Images\HomeView\WallCabinet.png" />
+    <EmbeddedResource Include="Images\HomeView\WallSconce.png" />
+    <EmbeddedResource Include="Images\HRLogo.png" />
+    <EmbeddedResource Include="Images\LogosAndCards\CCardHerald.png" />
+    <EmbeddedResource Include="Images\LogosAndCards\CCardHSN.png" />
+    <EmbeddedResource Include="Images\LogosAndCards\CCardOlympic.png" />
+    <EmbeddedResource Include="Images\LogosAndCards\DCardHerald.png" />
+    <EmbeddedResource Include="Images\LogosAndCards\DCardHSN.png" />
+    <EmbeddedResource Include="Images\LogosAndCards\DCardOlympic.png" />
+    <EmbeddedResource Include="Images\LogosAndCards\LogoAuto.png" />
+    <EmbeddedResource Include="Images\LogosAndCards\LogoCentury.png" />
+    <EmbeddedResource Include="Images\LogosAndCards\LogoElectric.png" />
+    <EmbeddedResource Include="Images\LogosAndCards\LogoFiduciary.png" />
+    <EmbeddedResource Include="Images\LogosAndCards\LogoHerald.png" />
+    <EmbeddedResource Include="Images\LogosAndCards\LogoHSN.png" />
+    <EmbeddedResource Include="Images\LogosAndCards\LogoInsurance.png" />
+    <EmbeddedResource Include="Images\LogosAndCards\LogoInternet.png" />
+    <EmbeddedResource Include="Images\LogosAndCards\LogoIRS.jpg" />
+    <EmbeddedResource Include="Images\LogosAndCards\LogoMedical.png" />
+    <EmbeddedResource Include="Images\LogosAndCards\LogoOlympic.png" />
+    <EmbeddedResource Include="Images\LogosAndCards\LogoProperty.png" />
+    <EmbeddedResource Include="Images\LogosAndCards\LogoStudentLoan.png" />
+    <EmbeddedResource Include="Images\People\FemaleCarryFoodNW000.gif" />
+    <EmbeddedResource Include="Images\People\FemaleCarryFoodNW002.gif" />
+    <EmbeddedResource Include="Images\People\FemaleCarryFoodNW004.gif" />
+    <EmbeddedResource Include="Images\People\FemaleCarryFoodNW006.gif" />
+    <EmbeddedResource Include="Images\People\FemaleCarryFoodNW008.gif" />
+    <EmbeddedResource Include="Images\People\FemaleCarryFoodSW000.gif" />
+    <EmbeddedResource Include="Images\People\FemaleCarryFoodSW002.gif" />
+    <EmbeddedResource Include="Images\People\FemaleCarryFoodSW004.gif" />
+    <EmbeddedResource Include="Images\People\FemaleCarryFoodSW006.gif" />
+    <EmbeddedResource Include="Images\People\FemaleCarryFoodSW008.gif" />
+    <EmbeddedResource Include="Images\People\FemaleDanceSW000.gif" />
+    <EmbeddedResource Include="Images\People\FemaleDanceSW001.gif" />
+    <EmbeddedResource Include="Images\People\FemaleDanceSW002.gif" />
+    <EmbeddedResource Include="Images\People\FemaleDanceSW003.gif" />
+    <EmbeddedResource Include="Images\People\FemaleDanceSW004.gif" />
+    <EmbeddedResource Include="Images\People\FemaleDanceSW005.gif" />
+    <EmbeddedResource Include="Images\People\FemaleDanceSW006.gif" />
+    <EmbeddedResource Include="Images\People\FemaleDanceSW007.gif" />
+    <EmbeddedResource Include="Images\People\FemaleDanceSW008.gif" />
+    <EmbeddedResource Include="Images\People\FemaleDanceSW009.gif" />
+    <EmbeddedResource Include="Images\People\FemaleDanceSW010.gif" />
+    <EmbeddedResource Include="Images\People\FemaleDanceSW011.gif" />
+    <EmbeddedResource Include="Images\People\FemaleDanceSW012.gif" />
+    <EmbeddedResource Include="Images\People\FemaleDanceSW013.gif" />
+    <EmbeddedResource Include="Images\People\FemaleDanceSW014.gif" />
+    <EmbeddedResource Include="Images\People\FemaleDanceSW015.gif" />
+    <EmbeddedResource Include="Images\People\FemaleDanceSW016.gif" />
+    <EmbeddedResource Include="Images\People\FemaleDanceSW017.gif" />
+    <EmbeddedResource Include="Images\People\FemaleDanceSW018.gif" />
+    <EmbeddedResource Include="Images\People\FemaleDanceSW019.gif" />
+    <EmbeddedResource Include="Images\People\FemaleDanceSW020.gif" />
+    <EmbeddedResource Include="Images\People\FemaleDanceSW021.gif" />
+    <EmbeddedResource Include="Images\People\FemaleDanceSW022.gif" />
+    <EmbeddedResource Include="Images\People\FemaleDanceSW023.gif" />
+    <EmbeddedResource Include="Images\People\FemaleDanceSW024.gif" />
+    <EmbeddedResource Include="Images\People\FemaleDanceSW025.gif" />
+    <EmbeddedResource Include="Images\People\FemaleDanceSW026.gif" />
+    <EmbeddedResource Include="Images\People\FemaleEatSW000.gif" />
+    <EmbeddedResource Include="Images\People\FemaleEatSW001.gif" />
+    <EmbeddedResource Include="Images\People\FemaleEatSW002.gif" />
+    <EmbeddedResource Include="Images\People\FemaleEatSW003.gif" />
+    <EmbeddedResource Include="Images\People\FemaleEatSW004.gif" />
+    <EmbeddedResource Include="Images\People\FemaleEatSW005.gif" />
+    <EmbeddedResource Include="Images\People\FemaleEatSW006.gif" />
+    <EmbeddedResource Include="Images\People\FemaleEatSW007.gif" />
+    <EmbeddedResource Include="Images\People\FemaleEatSW008.gif" />
+    <EmbeddedResource Include="Images\People\FemaleEatSW009.gif" />
+    <EmbeddedResource Include="Images\People\FemaleFastFoodStandNW.gif" />
+    <EmbeddedResource Include="Images\People\FemaleFastFoodStandSW.gif" />
+    <EmbeddedResource Include="Images\People\FemaleFastFoodWalkNW000.gif" />
+    <EmbeddedResource Include="Images\People\FemaleFastFoodWalkNW002.gif" />
+    <EmbeddedResource Include="Images\People\FemaleFastFoodWalkNW004.gif" />
+    <EmbeddedResource Include="Images\People\FemaleFastFoodWalkNW006.gif" />
+    <EmbeddedResource Include="Images\People\FemaleFastFoodWalkNW008.gif" />
+    <EmbeddedResource Include="Images\People\FemaleFastFoodWalkSW000.gif" />
+    <EmbeddedResource Include="Images\People\FemaleFastFoodWalkSW002.gif" />
+    <EmbeddedResource Include="Images\People\FemaleFastFoodWalkSW004.gif" />
+    <EmbeddedResource Include="Images\People\FemaleFastFoodWalkSW006.gif" />
+    <EmbeddedResource Include="Images\People\FemaleFastFoodWalkSW008.gif" />
+    <EmbeddedResource Include="Images\People\FemaleFFCarryFoodNW000.gif" />
+    <EmbeddedResource Include="Images\People\FemaleFFCarryFoodNW002.gif" />
+    <EmbeddedResource Include="Images\People\FemaleFFCarryFoodNW004.gif" />
+    <EmbeddedResource Include="Images\People\FemaleFFCarryFoodNW006.gif" />
+    <EmbeddedResource Include="Images\People\FemaleFFCarryFoodNW008.gif" />
+    <EmbeddedResource Include="Images\People\FemaleFFCarryFoodSW000.gif" />
+    <EmbeddedResource Include="Images\People\FemaleFFCarryFoodSW002.gif" />
+    <EmbeddedResource Include="Images\People\FemaleFFCarryFoodSW004.gif" />
+    <EmbeddedResource Include="Images\People\FemaleFFCarryFoodSW006.gif" />
+    <EmbeddedResource Include="Images\People\FemaleFFCarryFoodSW008.gif" />
+    <EmbeddedResource Include="Images\People\FemaleFFTakeOrderSW000.gif" />
+    <EmbeddedResource Include="Images\People\FemaleFFTakeOrderSW001.gif" />
+    <EmbeddedResource Include="Images\People\FemaleFFTakeOrderSW002.gif" />
+    <EmbeddedResource Include="Images\People\FemaleFFTakeOrderSW003.gif" />
+    <EmbeddedResource Include="Images\People\FemaleFFTakeOrderSW004.gif" />
+    <EmbeddedResource Include="Images\People\FemaleFFTakeOrderSW005.gif" />
+    <EmbeddedResource Include="Images\People\FemaleFFTakeOrderSW006.gif" />
+    <EmbeddedResource Include="Images\People\FemaleFFTakeOrderSW007.gif" />
+    <EmbeddedResource Include="Images\People\FemaleFFTakeOrderSW008.gif" />
+    <EmbeddedResource Include="Images\People\FemaleFFTakeOrderSW009.gif" />
+    <EmbeddedResource Include="Images\People\FemaleFFTakeOrderSW010.gif" />
+    <EmbeddedResource Include="Images\People\FemaleFFTakeOrderSW011.gif" />
+    <EmbeddedResource Include="Images\People\FemaleFFTakeOrderSW012.gif" />
+    <EmbeddedResource Include="Images\People\FemaleFFTakeOrderSW013.gif" />
+    <EmbeddedResource Include="Images\People\FemaleFFTakeOrderSW014.gif" />
+    <EmbeddedResource Include="Images\People\FemaleFFTakeOrderSW015.gif" />
+    <EmbeddedResource Include="Images\People\FemaleFFTakeOrderSW016.gif" />
+    <EmbeddedResource Include="Images\People\FemaleFFTakeOrderSW017.gif" />
+    <EmbeddedResource Include="Images\People\FemaleFFTakeOrderSW018.gif" />
+    <EmbeddedResource Include="Images\People\FemaleJumpingJacksSW000.gif" />
+    <EmbeddedResource Include="Images\People\FemaleJumpingJacksSW001.gif" />
+    <EmbeddedResource Include="Images\People\FemaleJumpingJacksSW002.gif" />
+    <EmbeddedResource Include="Images\People\FemaleJumpingJacksSW003.gif" />
+    <EmbeddedResource Include="Images\People\FemaleJumpingJacksSW004.gif" />
+    <EmbeddedResource Include="Images\People\FemaleJumpingJacksSW005.gif" />
+    <EmbeddedResource Include="Images\People\FemaleJumpingJacksSW006.gif" />
+    <EmbeddedResource Include="Images\People\FemaleJumpingJacksSW007.gif" />
+    <EmbeddedResource Include="Images\People\FemaleJumpingJacksSW008.gif" />
+    <EmbeddedResource Include="Images\People\FemaleSitNW.gif" />
+    <EmbeddedResource Include="Images\People\FemaleSitSW.gif" />
+    <EmbeddedResource Include="Images\People\FemaleSleepNW.gif" />
+    <EmbeddedResource Include="Images\People\FemaleSleepSW.gif" />
+    <EmbeddedResource Include="Images\People\FemaleStandNW.gif" />
+    <EmbeddedResource Include="Images\People\FemaleStandSW.gif" />
+    <EmbeddedResource Include="Images\People\FemaleWalkNW000.gif" />
+    <EmbeddedResource Include="Images\People\FemaleWalkNW002.gif" />
+    <EmbeddedResource Include="Images\People\FemaleWalkNW004.gif" />
+    <EmbeddedResource Include="Images\People\FemaleWalkNW006.gif" />
+    <EmbeddedResource Include="Images\People\FemaleWalkNW008.gif" />
+    <EmbeddedResource Include="Images\People\FemaleWalkSW000.gif" />
+    <EmbeddedResource Include="Images\People\FemaleWalkSW002.gif" />
+    <EmbeddedResource Include="Images\People\FemaleWalkSW004.gif" />
+    <EmbeddedResource Include="Images\People\FemaleWalkSW006.gif" />
+    <EmbeddedResource Include="Images\People\FemaleWalkSW008.gif" />
+    <EmbeddedResource Include="Images\People\MaleCarryFoodNW000.gif" />
+    <EmbeddedResource Include="Images\People\MaleCarryFoodNW002.gif" />
+    <EmbeddedResource Include="Images\People\MaleCarryFoodNW004.gif" />
+    <EmbeddedResource Include="Images\People\MaleCarryFoodNW006.gif" />
+    <EmbeddedResource Include="Images\People\MaleCarryFoodNW008.gif" />
+    <EmbeddedResource Include="Images\People\MaleCarryFoodSW000.gif" />
+    <EmbeddedResource Include="Images\People\MaleCarryFoodSW002.gif" />
+    <EmbeddedResource Include="Images\People\MaleCarryFoodSW004.gif" />
+    <EmbeddedResource Include="Images\People\MaleCarryFoodSW006.gif" />
+    <EmbeddedResource Include="Images\People\MaleCarryFoodSW008.gif" />
+    <EmbeddedResource Include="Images\People\MaleDanceSW000.gif" />
+    <EmbeddedResource Include="Images\People\MaleDanceSW001.gif" />
+    <EmbeddedResource Include="Images\People\MaleDanceSW002.gif" />
+    <EmbeddedResource Include="Images\People\MaleDanceSW003.gif" />
+    <EmbeddedResource Include="Images\People\MaleDanceSW004.gif" />
+    <EmbeddedResource Include="Images\People\MaleDanceSW005.gif" />
+    <EmbeddedResource Include="Images\People\MaleDanceSW006.gif" />
+    <EmbeddedResource Include="Images\People\MaleDanceSW007.gif" />
+    <EmbeddedResource Include="Images\People\MaleDanceSW008.gif" />
+    <EmbeddedResource Include="Images\People\MaleDanceSW009.gif" />
+    <EmbeddedResource Include="Images\People\MaleDanceSW010.gif" />
+    <EmbeddedResource Include="Images\People\MaleDanceSW011.gif" />
+    <EmbeddedResource Include="Images\People\MaleDanceSW012.gif" />
+    <EmbeddedResource Include="Images\People\MaleDanceSW013.gif" />
+    <EmbeddedResource Include="Images\People\MaleDanceSW014.gif" />
+    <EmbeddedResource Include="Images\People\MaleDanceSW015.gif" />
+    <EmbeddedResource Include="Images\People\MaleDanceSW016.gif" />
+    <EmbeddedResource Include="Images\People\MaleDanceSW017.gif" />
+    <EmbeddedResource Include="Images\People\MaleDanceSW018.gif" />
+    <EmbeddedResource Include="Images\People\MaleDanceSW019.gif" />
+    <EmbeddedResource Include="Images\People\MaleDanceSW020.gif" />
+    <EmbeddedResource Include="Images\People\MaleDanceSW021.gif" />
+    <EmbeddedResource Include="Images\People\MaleDanceSW022.gif" />
+    <EmbeddedResource Include="Images\People\MaleDanceSW023.gif" />
+    <EmbeddedResource Include="Images\People\MaleDanceSW024.gif" />
+    <EmbeddedResource Include="Images\People\MaleDanceSW025.gif" />
+    <EmbeddedResource Include="Images\People\MaleDanceSW026.gif" />
+    <EmbeddedResource Include="Images\People\MaleEatSW000.gif" />
+    <EmbeddedResource Include="Images\People\MaleEatSW001.gif" />
+    <EmbeddedResource Include="Images\People\MaleEatSW002.gif" />
+    <EmbeddedResource Include="Images\People\MaleEatSW003.gif" />
+    <EmbeddedResource Include="Images\People\MaleEatSW004.gif" />
+    <EmbeddedResource Include="Images\People\MaleEatSW005.gif" />
+    <EmbeddedResource Include="Images\People\MaleEatSW006.gif" />
+    <EmbeddedResource Include="Images\People\MaleEatSW007.gif" />
+    <EmbeddedResource Include="Images\People\MaleEatSW008.gif" />
+    <EmbeddedResource Include="Images\People\MaleEatSW009.gif" />
+    <EmbeddedResource Include="Images\People\MaleFastFoodStandNW.gif" />
+    <EmbeddedResource Include="Images\People\MaleFastFoodStandSW.gif" />
+    <EmbeddedResource Include="Images\People\MaleFastFoodWalkNW000.gif" />
+    <EmbeddedResource Include="Images\People\MaleFastFoodWalkNW002.gif" />
+    <EmbeddedResource Include="Images\People\MaleFastFoodWalkNW004.gif" />
+    <EmbeddedResource Include="Images\People\MaleFastFoodWalkNW006.gif" />
+    <EmbeddedResource Include="Images\People\MaleFastFoodWalkNW008.gif" />
+    <EmbeddedResource Include="Images\People\MaleFastFoodWalkSW000.gif" />
+    <EmbeddedResource Include="Images\People\MaleFastFoodWalkSW002.gif" />
+    <EmbeddedResource Include="Images\People\MaleFastFoodWalkSW004.gif" />
+    <EmbeddedResource Include="Images\People\MaleFastFoodWalkSW006.gif" />
+    <EmbeddedResource Include="Images\People\MaleFastFoodWalkSW008.gif" />
+    <EmbeddedResource Include="Images\People\MaleFFCarryFoodNW000.gif" />
+    <EmbeddedResource Include="Images\People\MaleFFCarryFoodNW002.gif" />
+    <EmbeddedResource Include="Images\People\MaleFFCarryFoodNW004.gif" />
+    <EmbeddedResource Include="Images\People\MaleFFCarryFoodNW006.gif" />
+    <EmbeddedResource Include="Images\People\MaleFFCarryFoodNW008.gif" />
+    <EmbeddedResource Include="Images\People\MaleFFCarryFoodSW000.gif" />
+    <EmbeddedResource Include="Images\People\MaleFFCarryFoodSW002.gif" />
+    <EmbeddedResource Include="Images\People\MaleFFCarryFoodSW004.gif" />
+    <EmbeddedResource Include="Images\People\MaleFFCarryFoodSW006.gif" />
+    <EmbeddedResource Include="Images\People\MaleFFCarryFoodSW008.gif" />
+    <EmbeddedResource Include="Images\People\MaleFFTakeOrderSW000.gif" />
+    <EmbeddedResource Include="Images\People\MaleFFTakeOrderSW001.gif" />
+    <EmbeddedResource Include="Images\People\MaleFFTakeOrderSW002.gif" />
+    <EmbeddedResource Include="Images\People\MaleFFTakeOrderSW003.gif" />
+    <EmbeddedResource Include="Images\People\MaleFFTakeOrderSW004.gif" />
+    <EmbeddedResource Include="Images\People\MaleFFTakeOrderSW005.gif" />
+    <EmbeddedResource Include="Images\People\MaleFFTakeOrderSW006.gif" />
+    <EmbeddedResource Include="Images\People\MaleFFTakeOrderSW007.gif" />
+    <EmbeddedResource Include="Images\People\MaleFFTakeOrderSW008.gif" />
+    <EmbeddedResource Include="Images\People\MaleFFTakeOrderSW009.gif" />
+    <EmbeddedResource Include="Images\People\MaleFFTakeOrderSW010.gif" />
+    <EmbeddedResource Include="Images\People\MaleFFTakeOrderSW011.gif" />
+    <EmbeddedResource Include="Images\People\MaleFFTakeOrderSW012.gif" />
+    <EmbeddedResource Include="Images\People\MaleFFTakeOrderSW013.gif" />
+    <EmbeddedResource Include="Images\People\MaleFFTakeOrderSW014.gif" />
+    <EmbeddedResource Include="Images\People\MaleFFTakeOrderSW015.gif" />
+    <EmbeddedResource Include="Images\People\MaleFFTakeOrderSW016.gif" />
+    <EmbeddedResource Include="Images\People\MaleFFTakeOrderSW017.gif" />
+    <EmbeddedResource Include="Images\People\MaleFFTakeOrderSW018.gif" />
+    <EmbeddedResource Include="Images\People\MaleJumpingJacksSW000.gif" />
+    <EmbeddedResource Include="Images\People\MaleJumpingJacksSW001.gif" />
+    <EmbeddedResource Include="Images\People\MaleJumpingJacksSW002.gif" />
+    <EmbeddedResource Include="Images\People\MaleJumpingJacksSW003.gif" />
+    <EmbeddedResource Include="Images\People\MaleJumpingJacksSW004.gif" />
+    <EmbeddedResource Include="Images\People\MaleJumpingJacksSW005.gif" />
+    <EmbeddedResource Include="Images\People\MaleJumpingJacksSW006.gif" />
+    <EmbeddedResource Include="Images\People\MaleJumpingJacksSW007.gif" />
+    <EmbeddedResource Include="Images\People\MaleJumpingJacksSW008.gif" />
+    <EmbeddedResource Include="Images\People\MaleSitNW.gif" />
+    <EmbeddedResource Include="Images\People\MaleSitSW.gif" />
+    <EmbeddedResource Include="Images\People\MaleSleepNW.gif" />
+    <EmbeddedResource Include="Images\People\MaleSleepSW.gif" />
+    <EmbeddedResource Include="Images\People\MaleStandNW.gif" />
+    <EmbeddedResource Include="Images\People\MaleStandSW.gif" />
+    <EmbeddedResource Include="Images\People\MaleWalkNW000.gif" />
+    <EmbeddedResource Include="Images\People\MaleWalkNW002.gif" />
+    <EmbeddedResource Include="Images\People\MaleWalkNW004.gif" />
+    <EmbeddedResource Include="Images\People\MaleWalkNW006.gif" />
+    <EmbeddedResource Include="Images\People\MaleWalkNW008.gif" />
+    <EmbeddedResource Include="Images\People\MaleWalkSW000.gif" />
+    <EmbeddedResource Include="Images\People\MaleWalkSW002.gif" />
+    <EmbeddedResource Include="Images\People\MaleWalkSW004.gif" />
+    <EmbeddedResource Include="Images\People\MaleWalkSW006.gif" />
+    <EmbeddedResource Include="Images\People\MaleWalkSW008.gif" />
+    <EmbeddedResource Include="Images\People\Palette0.gif" />
+    <EmbeddedResource Include="Images\People\Palette1.gif" />
+    <EmbeddedResource Include="Images\People\Palette2.gif" />
+    <EmbeddedResource Include="Images\People\Palette3.gif" />
+    <EmbeddedResource Include="Images\People\Palette4.gif" />
+    <EmbeddedResource Include="Images\People\Palette5.gif" />
+    <EmbeddedResource Include="Images\People\UserPeople\Female0.gif" />
+    <EmbeddedResource Include="Images\People\UserPeople\Female1.gif" />
+    <EmbeddedResource Include="Images\People\UserPeople\Female2.gif" />
+    <EmbeddedResource Include="Images\People\UserPeople\Female3.gif" />
+    <EmbeddedResource Include="Images\People\UserPeople\Female4.gif" />
+    <EmbeddedResource Include="Images\People\UserPeople\Female5.gif" />
+    <EmbeddedResource Include="Images\People\UserPeople\Male0.gif" />
+    <EmbeddedResource Include="Images\People\UserPeople\Male1.gif" />
+    <EmbeddedResource Include="Images\People\UserPeople\Male2.gif" />
+    <EmbeddedResource Include="Images\People\UserPeople\Male3.gif" />
+    <EmbeddedResource Include="Images\People\UserPeople\Male4.gif" />
+    <EmbeddedResource Include="Images\People\UserPeople\Male5.gif" />
+    <EmbeddedResource Include="Images\StatusIconsAndPointers\BusTokens.png" />
+    <EmbeddedResource Include="Images\StatusIconsAndPointers\Car0Broken.png" />
+    <EmbeddedResource Include="Images\StatusIconsAndPointers\Car0OK.png" />
+    <EmbeddedResource Include="Images\StatusIconsAndPointers\Car1Broken.png" />
+    <EmbeddedResource Include="Images\StatusIconsAndPointers\Car1OK.png" />
+    <EmbeddedResource Include="Images\StatusIconsAndPointers\Car2Broken.png" />
+    <EmbeddedResource Include="Images\StatusIconsAndPointers\Car2OK.png" />
+    <EmbeddedResource Include="Images\StatusIconsAndPointers\Car3Broken.png" />
+    <EmbeddedResource Include="Images\StatusIconsAndPointers\Car3OK.png" />
+    <EmbeddedResource Include="Images\StatusIconsAndPointers\Car4Broken.png" />
+    <EmbeddedResource Include="Images\StatusIconsAndPointers\Car4OK.png" />
+    <EmbeddedResource Include="Images\StatusIconsAndPointers\Car5Broken.png" />
+    <EmbeddedResource Include="Images\StatusIconsAndPointers\Car5OK.png" />
+    <EmbeddedResource Include="Images\StatusIconsAndPointers\Condo.png" />
+    <EmbeddedResource Include="Images\StatusIconsAndPointers\CondoGray.png" />
+    <EmbeddedResource Include="Images\StatusIconsAndPointers\Food.png" />
+    <EmbeddedResource Include="Images\StatusIconsAndPointers\Gas.png" />
+    <EmbeddedResource Include="Images\StatusIconsAndPointers\Health.png" />
+    <EmbeddedResource Include="Images\StatusIconsAndPointers\Home.png" />
+    <EmbeddedResource Include="Images\StatusIconsAndPointers\HomeGray.png" />
+    <EmbeddedResource Include="Images\StatusIconsAndPointers\Legend.png" />
+    <EmbeddedResource Include="Images\StatusIconsAndPointers\LegendAll.png" />
+    <EmbeddedResource Include="Images\StatusIconsAndPointers\Person.png" />
+    <EmbeddedResource Include="Images\StatusIconsAndPointers\PersonGray.png" />
+    <EmbeddedResource Include="Images\StatusIconsAndPointers\School.png" />
+    <EmbeddedResource Include="Images\StatusIconsAndPointers\SchoolGray.png" />
+    <EmbeddedResource Include="Images\StatusIconsAndPointers\Work.png" />
+    <EmbeddedResource Include="Images\StatusIconsAndPointers\WorkGray.png" />
+    <EmbeddedResource Include="Images\WorkView0\BagOfFood.png" />
+    <EmbeddedResource Include="Images\WorkView0\Bar.png" />
+    <EmbeddedResource Include="Images\WorkView0\CashRegister.png" />
+    <EmbeddedResource Include="Images\WorkView0\CounterFastFood.png" />
+    <EmbeddedResource Include="Images\WorkView0\CounterOnlyFastFood.png" />
+    <EmbeddedResource Include="Images\WorkView0\FastFoodFloor.png" />
+    <EmbeddedResource Include="Images\WorkView0\FastFoodFloorWithShadows.png" />
+    <EmbeddedResource Include="Images\WorkView0\FoodContainer0.png" />
+    <EmbeddedResource Include="Images\WorkView0\FoodContainer1.png" />
+    <EmbeddedResource Include="Images\WorkView0\FoodWall.png" />
+    <EmbeddedResource Include="Images\WorkView0\FoodWallTop.png" />
+    <EmbeddedResource Include="Images\WorkView0\FrontGlassFastFood.png" />
+    <EmbeddedResource Include="Images\WorkView0\LeftGlass.png" />
+    <EmbeddedResource Include="Images\WorkView0\Napkins.png" />
+    <EmbeddedResource Include="Images\WorkView0\OutOfBusinessDoorway.png" />
+    <EmbeddedResource Include="Images\WorkView0\PlantsFrontLeft.png" />
+    <EmbeddedResource Include="Images\WorkView0\PlantsFrontRight.png" />
+    <EmbeddedResource Include="Images\WorkView0\RightGlass.png" />
+    <EmbeddedResource Include="Images\WorkView0\SodaMachine.png" />
+    <EmbeddedResource Include="Images\WorkView0\TreeFastFood.png" />
+    <EmbeddedResource Include="Images\WorkView1\OfficeBack.png" />
+    <EmbeddedResource Include="Images\WorkView1\OfficeCouch.png" />
+    <EmbeddedResource Include="Images\WorkView1\OfficeFrontWallRight.png" />
+    <EmbeddedResource Include="Images\WorkView1\OfficeManagerDesk.png" />
+    <EmbeddedResource Include="Images\WorkView1\OfficeManagerPainting.png" />
+    <EmbeddedResource Include="Images\WorkView1\OfficeManagerPlant.png" />
+    <EmbeddedResource Include="Images\WorkView1\OfficePlant.png" />
+    <EmbeddedResource Include="Images\WorkView1\OfficePrinter.png" />
+    <EmbeddedResource Include="Images\WorkView1\OfficeSupervisorBookshelf.png" />
+    <EmbeddedResource Include="Images\WorkView1\OfficeSupervisorDesk.png" />
+    <EmbeddedResource Include="Images\WorkView1\OfficeWorkerChair.png" />
+    <EmbeddedResource Include="Images\WorkView1\OfficeWorkerDesk.png" />
+    <EmbeddedResource Include="Images\WorkView1\SEWall.png" />
+    <EmbeddedResource Include="Images\WorkView1\SWWall.png" />
+    <EmbeddedResource Include="Images\WorkView1\Type\FemaleSitTypeNW000.gif" />
+    <EmbeddedResource Include="Images\WorkView1\Type\FemaleSitTypeNW001.gif" />
+    <EmbeddedResource Include="Images\WorkView1\Type\FemaleSitTypeNW002.gif" />
+    <EmbeddedResource Include="Images\WorkView1\Type\FemaleSitTypeNW003.gif" />
+    <EmbeddedResource Include="Images\WorkView1\Type\FemaleSitTypeNW004.gif" />
+    <EmbeddedResource Include="Images\WorkView1\Type\FemaleSitTypeNW005.gif" />
+    <EmbeddedResource Include="Images\WorkView1\Type\FemaleSitTypeNW006.gif" />
+    <EmbeddedResource Include="Images\WorkView1\Type\FemaleSitTypeNW007.gif" />
+    <EmbeddedResource Include="Images\WorkView1\Type\FemaleSitTypeNW008.gif" />
+    <EmbeddedResource Include="Images\WorkView1\Type\MaleSitTypeNW000.gif" />
+    <EmbeddedResource Include="Images\WorkView1\Type\MaleSitTypeNW001.gif" />
+    <EmbeddedResource Include="Images\WorkView1\Type\MaleSitTypeNW002.gif" />
+    <EmbeddedResource Include="Images\WorkView1\Type\MaleSitTypeNW003.gif" />
+    <EmbeddedResource Include="Images\WorkView1\Type\MaleSitTypeNW004.gif" />
+    <EmbeddedResource Include="Images\WorkView1\Type\MaleSitTypeNW005.gif" />
+    <EmbeddedResource Include="Images\WorkView1\Type\MaleSitTypeNW006.gif" />
+    <EmbeddedResource Include="Images\WorkView1\Type\MaleSitTypeNW007.gif" />
+    <EmbeddedResource Include="Images\WorkView1\Type\MaleSitTypeNW008.gif" />
+    <EmbeddedResource Include="RegisterLine.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KMI.Biz.City\KMI.Biz.City.csproj">
+      <Project>{2e8d4c9f-599b-4135-b73d-97e574cedfd3}</Project>
+      <Name>KMI.Biz.City</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KMI.Biz\KMI.Biz.csproj">
+      <Project>{e1077507-4d97-4cb9-89b4-27965761b963}</Project>
+      <Name>KMI.Biz</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KMI.Sim\KMI.Sim.csproj">
+      <Project>{c252d706-e4c5-432e-a001-e55987615dfb}</Project>
+      <Name>KMI.Sim</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KMI.Utility\KMI.Utility.csproj">
+      <Project>{b6006305-6afb-40cd-98e4-2d5b11e01ee7}</Project>
+      <Name>KMI.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

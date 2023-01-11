@@ -1,0 +1,4 @@
+RoleName	DisableListConcatenated
+CEO	New Survey
+Human Resources	Open New App Entity
+Finance	Test 3

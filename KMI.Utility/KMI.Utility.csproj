@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B6006305-6AFB-40CD-98E4-2D5B11E01EE7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>KMI</RootNamespace>
+    <AssemblyName>KMI.Utility</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Build\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Biz\frmInputAmount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Biz\frmInputAmount.Designer.cs">
+      <DependentUpon>frmInputAmount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utility\Constants.cs" />
+    <Compile Include="Utility\ControlArray.cs" />
+    <Compile Include="Utility\frmDualChoiceDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utility\frmDualChoiceDialog.Designer.cs">
+      <DependentUpon>frmDualChoiceDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\frmInputString.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utility\frmInputString.Designer.cs">
+      <DependentUpon>frmInputString.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\frmPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utility\frmPassword.Designer.cs">
+      <DependentUpon>frmPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\KMIGraph.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utility\KMIHelp.cs" />
+    <Compile Include="Utility\PerformanceLog.cs" />
+    <Compile Include="Utility\Phraser.cs" />
+    <Compile Include="Utility\ResponseCurve.cs" />
+    <Compile Include="Utility\ScoreAdapter.cs" />
+    <Compile Include="Utility\Sound.cs" />
+    <Compile Include="Utility\TableReader.cs" />
+    <Compile Include="Utility\Utilities.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Biz\frmInputAmount.resources" />
+    <EmbeddedResource Include="Utility\frmDualChoiceDialog.resources" />
+    <EmbeddedResource Include="Utility\frmInputString.resources" />
+    <EmbeddedResource Include="Utility\frmPassword.resources" />
+    <EmbeddedResource Include="Utility\KMIGraph.resources" />
+    <EmbeddedResource Include="Utility\Names.resources" />
+    <EmbeddedResource Include="Utility\Utility.resources" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

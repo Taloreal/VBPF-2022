@@ -1,0 +1,6 @@
+Name	FriendlyName	Description	Price	ImageName
+GasSmall	10 Gals. Gas	Ten gallons of 87 octane gasoline	28.95	GasCan0
+GasMedium	20 Gals. Gas	Twenty gallons of 87 octane gasoline	57.9	GasCan1
+GasLarge	30 Gals. Gas	Thirty gallons of 87 octane gasoline	86.85	GasCan2
+Tuneup	Lube	"Change oil, air filter, check fluids, tire pressure."	35.99	MotorOil
+MajorRepair	Major Repair	Transmission rebuild.	2099	CarOnLift

@@ -1,0 +1,6 @@
+KeyName	Level	NetWorth	LikelihoodPerDay	MinSpacing
+Health	2	55000	0.005	180
+Car Accident	2	40000	0.01	360
+Car Breakdown	1	13000	0.02	180
+Robbery	1	10000	0.005	540
+Layoff	1	16000	0.01	720
